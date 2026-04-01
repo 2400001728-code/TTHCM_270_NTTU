@@ -4,13 +4,15 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!-- Ngăn cache -->
-        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Cache-Control"
+            content="no-cache, no-store, must-revalidate" />
         <meta http-equiv="Pragma" content="no-cache" />
         <meta http-equiv="Expires" content="0" />
         <title>Web trắc nghiệm JSON</title>
 
         <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3BC3V1GYKX"></script>
+        <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-3BC3V1GYKX"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag() {
@@ -497,10 +499,14 @@
             <b>Web trắc nghiệm</b>
 
             <div class="header-actions">
-                <button class="btn start" onclick="start()">▶ Bắt đầu (50)</button>
-                <button class="btn mode" onclick="toggleMode()">🧠 Làm 270 câu</button>
-                <button class="btn theme" onclick="toggleTheme()" id="theme-btn">🌙 Dark</button>
-                <button class="btn reset" onclick="resetQuiz()">🔄 Làm lại</button>
+                <button class="btn start" onclick="start()">▶ Bắt đầu
+                    (50)</button>
+                <button class="btn mode" onclick="toggleMode()">🧠 Làm 270
+                    câu</button>
+                <button class="btn theme" onclick="toggleTheme()"
+                    id="theme-btn">🌙 Dark</button>
+                <button class="btn reset" onclick="resetQuiz()">🔄 Làm
+                    lại</button>
             </div>
         </header>
 
@@ -518,7 +524,8 @@
         </div>
 
         <div class="footer">
-            <button class="nav-btn" onclick="prevQuestion()">⬅ Câu trước</button>
+            <button class="nav-btn" onclick="prevQuestion()">⬅ Câu
+                trước</button>
 
             <div class="footer-center">
                 <span id="progress-text">Câu 1 / 50</span>
@@ -526,10 +533,12 @@
                 <span id="score">Đúng 0</span>
             </div>
 
-            <button class="nav-btn primary" onclick="nextQuestion()">Câu sau ➡</button>
+            <button class="nav-btn primary" onclick="nextQuestion()">Câu sau
+                ➡</button>
         </div>
 
-        <div style="max-width: 1200px; margin: 0 auto 1rem; padding: 0 1.5rem; color: var(--muted); font-weight: 600;">
+        <div
+            style="max-width: 1200px; margin: 0 auto 1rem; padding: 0 1.5rem; color: var(--muted); font-weight: 600;">
             👥 Người đang online: <span id="onlineCount">0</span>
         </div>
 
@@ -786,7 +795,8 @@
                 applyTheme();
             }
         </script>
-        <button class="open-sidebar" onclick="toggleSidebar()">📋 Câu hỏi</button>
+        <button class="open-sidebar" onclick="toggleSidebar()">📋 Câu
+            hỏi</button>
 
         <script type="module">
             import { initializeApp } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js";
@@ -799,15 +809,15 @@
             } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-database.js";
 
             const firebaseConfig = {
-                apiKey: "AIzaSyAvUX94URWIom04aDsPSnKd97G1PLEcn1Y",
-                authDomain: "lsd270nttu.firebaseapp.com",
-                databaseURL: "https://lsd270nttu-default-rtdb.asia-southeast1.firebasedatabase.app",
-                projectId: "lsd270nttu",
-                storageBucket: "lsd270nttu.firebasestorage.app",
-                messagingSenderId: "43909484510",
-                appId: "1:43909484510:web:703fd6c6a25477a0eb574f",
+                 apiKey: "AIzaSyAG3iVcuPSYZryMprxzYCmhw4B86ICJYwA",
+                 authDomain: "tthcm270nttu.firebaseapp.com",
+                 databaseURL: "https://tthcm270nttu-default-rtdb.asia-southeast1.firebasedatabase.app", 
+                 projectId: "tthcm270nttu",
+                 storageBucket: "tthcm270nttu.firebasestorage.app",
+                 messagingSenderId: "423725973766",
+                 appId: "1:423725973766:web:effe4ffa21da3a4e301e87",
+                 measurementId: "G-HYWMSWHD3X"
             };
-
             const app = initializeApp(firebaseConfig);
             const db = getDatabase(app);
 
