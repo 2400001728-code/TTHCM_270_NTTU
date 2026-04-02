@@ -794,6 +794,17 @@
                 THEME = THEME === "dark" ? "light" : "dark";
                 applyTheme();
             }
+
+            // Điều hướng bằng phím mũi tên
+            document.addEventListener("keydown", (e) => {
+                if (e.key === "ArrowLeft") {
+                    e.preventDefault();
+                    prevQuestion();
+                } else if (e.key === "ArrowRight") {
+                    e.preventDefault();
+                    nextQuestion();
+                }
+            });
         </script>
         <button class="open-sidebar" onclick="toggleSidebar()">📋 Câu
             hỏi</button>
